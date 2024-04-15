@@ -19,7 +19,7 @@ public class TestRecomendador {
 	public void test_formato() {
 		Visualizacion v = new Visualizacion();
 		
-		String csv = v.recomendacionesCSV(BBDD.JUAN);
+		String csv = v.recomendacionesCSV(Recomendador.recomendaciones(BBDD.JUAN));
 		
 		String esperado = "Salvar al soldado Ryan,Spielberg,belico";
 		
